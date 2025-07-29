@@ -29,7 +29,7 @@ export function EmailManagementDialog({ isOpen, setIsOpen }: EmailManagementDial
       const docSnap = await getDoc(docRef);
       if (docSnap.exists()) {
         const data = docSnap.data();
-        return data.admin || [];
+        return data.admin ?? [];
       }
       return []; // Default to empty array if no data exists
     };
