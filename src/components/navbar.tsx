@@ -1,5 +1,5 @@
 import { Button } from "~/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "~/components/ui/sheet";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "~/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -54,14 +54,20 @@ export default function Navbar({ links, joinLink }: NavbarProps) {
               </SheetTrigger>
               <SheetContent
                 side="right"
-                className="text-white"
+                className="text-white bg-darkGreen/95 backdrop-blur-sm"
               >
-                <nav className="flex flex-col space-y-4">
+                <SheetHeader>
+                  <SheetTitle className="text-white">Menu</SheetTitle>
+                  <SheetDescription className="text-white/80">
+                    Navigate through the EHS Speech & Debate website
+                  </SheetDescription>
+                </SheetHeader>
+                <nav className="flex flex-col space-y-4 mt-6">
                   {links.map((link, index) => (
                     <Link
                     key={index}
                     href={link.join ? joinLink : link.href}
-                    className={`text-sm font-medium text-darkGreen transition-colors hover:underline`}
+                    className={`text-sm font-medium text-white transition-colors hover:underline hover:text-white/80`}
                   >
                     {link.text}
                   </Link>

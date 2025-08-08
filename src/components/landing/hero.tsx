@@ -91,23 +91,14 @@ export default function Hero({
             </p>
             <p className="max-w-[600px] text-black md:text-xl">{description}</p>
           </div>
-          <motion.div
-            initial={{ scale: 0.95 }}
-            animate={{ scale: 1.05 }}
-            transition={{
-              duration: 0.5,
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
-            className="flex flex-col justify-center gap-2 min-[400px]:flex-row"
-          >
+          <div className="flex flex-col justify-center gap-2 min-[400px]:flex-row">
             <Button
               asChild
-              className="cursor-pointer bg-darkGreen p-6 text-xl text-white transition-all duration-200 hover:scale-105 hover:bg-darkGreen/90 hover:underline"
+              className="cursor-pointer bg-darkGreen p-4 text-sm sm:p-6 sm:text-lg md:text-xl text-white transition-all duration-200 hover:scale-105 hover:bg-darkGreen/90 hover:underline"
             >
               <Link href={link}>{cta}</Link>
             </Button>
-          </motion.div>
+          </div>
         </div>
         <motion.div
           className="relative"
