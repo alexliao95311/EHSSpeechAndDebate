@@ -6,12 +6,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import type { HeroSection } from "~/types/components";
-import PhotoGallery from "./gallary";
 import type { DataStructure } from "~/utils/dataStructure";
 
 export default function Hero({
   hero,
-  gallary,
 }: {
   hero: HeroSection;
   gallary: DataStructure["landing"]["gallary"];
@@ -40,15 +38,6 @@ export default function Hero({
     <section className="relative w-full">
       {/* Top fade gradient */}
       <div className="from-background absolute top-0 z-10 h-32 w-full bg-gradient-to-b to-transparent" />
-
-      {/* School building background */}
-      <div className="absolute inset-0 h-full w-full">
-        <PhotoGallery
-          photos={gallary}
-          duration={2000}
-        />
-        <div className="from-background via-background/95 to-background/90 absolute inset-0 bg-gradient-to-t" />
-      </div>
       <div className="container relative mx-auto max-w-3xl px-4 md:px-6">
         {/* Dragon with fire animation */}
         <motion.div
