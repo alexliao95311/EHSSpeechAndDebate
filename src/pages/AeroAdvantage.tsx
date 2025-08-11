@@ -61,7 +61,16 @@ export default function AEROPage({ adminContent, adminError }: PageProps) {
               </div>
             </div>
             <div className="mx-auto h-[350px] w-[400px] rounded-lg bg-gray-100 p-8 md:mx-0 lg:h-[400px] lg:w-[550px]">
-      
+              <div className="mx-auto rounded-lg md:mx-0">
+  <Image
+    src="/landing/AAgroup.png"
+    alt="Aero Advantage Group Picture"
+    width={550}
+    height={400}
+    className="mx-auto rounded-lg"
+  />
+</div>
+
             </div>
           </div>
         </section>
@@ -70,9 +79,21 @@ export default function AEROPage({ adminContent, adminError }: PageProps) {
           <h2 className="text-3xl font-bold text-darkBlue">
             {locationAndDatesSection.title}
           </h2>
+          <Image
+    src="/landing/AADates25-26.png"
+    alt="Aero Advantage Dates"
+    width={800}
+    height={500}
+    className="mx-auto rounded-lg"
+          />
+
+  <LocationDates
+    items={locationAndDatesSection.locationsAndDates}
+  />
           <LocationDates
             items={locationAndDatesSection.locationsAndDates}
           />
+          
         </section>
 
         <section className="space-y-8">
