@@ -4,7 +4,6 @@ import Navbar from "~/components/navbar";
 import Footer from "~/components/footer";
 import navigation from "~/navigation.json";
 import { type PageProps, usePullContent } from "~/utils/pageUtils";
-import PhotoGallery from "~/components/landing/gallary";
 import Link from "next/link";
 import LocationDates from "~/components/aeroAdvantage/locationsAndDates";
 
