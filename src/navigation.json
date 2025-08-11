@@ -1,11 +1,11 @@
 {
     "navigation": {
       "links": [
-        {"text": "Aero Advantage", "href": "/AeroAdvantage"},
         {"text": "About Us", "href": "/about"},
         {"text": "Students", "href": "/students"},
-        {"text": "Parents", "href": "/parents"},
-        {"text": "Join", "href": "https://forms.gle/uhde3nZpReb1bZJY8", "join": true}
+          {"text": "Parents", "href": "/parents"},
+        {"text": "Aero Advantage", "href": "/AeroAdvantage"},
+        {"text": "Join", "href": "https://forms.gle/iNTVHxNEjY7GCsUY6", "join": true}
       ]
     },
     "footer": {
