@@ -39,8 +39,7 @@ export default function TournamentsPage({
             <p className="font-medium text-red-700">Important Notice</p>
           </div>
           <p className="mt-2 text-red-600">
-            Failure to submit these forms may result in ineligibility to
-            compete.
+            Early Dismissal will count as a unexcused abscene but it won't go on your record or qualify towards punishments like the No-Go list.
           </p>
         </div>
       </section>
