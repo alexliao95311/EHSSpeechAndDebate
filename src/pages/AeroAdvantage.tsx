@@ -33,7 +33,6 @@ export default function AEROPage({ adminContent, adminError }: PageProps) {
 
   const {
     opener,
-    photos,
     locationAndDatesSection,
     teamTitle,
     teamMembers,
@@ -62,10 +61,7 @@ export default function AEROPage({ adminContent, adminError }: PageProps) {
               </div>
             </div>
             <div className="mx-auto h-[350px] w-[400px] rounded-lg bg-gray-100 p-8 md:mx-0 lg:h-[400px] lg:w-[550px]">
-              <PhotoGallery
-                photos={photos}
-                duration={2000}
-              />
+      
             </div>
           </div>
         </section>
