@@ -13,7 +13,7 @@ export default function CalendarPage({
       <div className="space-y-6">
         <div className="flex items-center gap-2">
           <CalendarIcon className="h-6 w-6 text-darkGreen" />
-          <h1 className="text-3xl font-bold text-darkBlue">Team Calendar</h1>
+          <h1 className="text-3xl font-bold text-darkBlue">Calendar</h1>
         </div>
 
         <div className="space-y-4">
