@@ -1,26 +1,35 @@
-import React from 'react'
+// LocationsAndDates.tsx
+import Image from "next/image";
+import React from "react";
 
-interface LocationDate {
-  location: string
-  date: string
-  time: string
+// Step 1: Define the props interface  
+interface LocationsAndDatesProps {
+  items: { location: string; date: string; time: string }[];
 }
 
-interface LocationDatesProps {
-  items: LocationDate[]
-}
-
-export default function LocationDates({ items }: LocationDatesProps) {
+// Step 2: Accept props in the component  
+const LocationsAndDates: React.FC<LocationsAndDatesProps> = ({ items }) => {
   return (
-    <div className="text-center mx-auto max-w-2xl">
-      <ul className="flex flex-col justify-center">
+    <section className="my-8">
+      <Image
+        src="/landing/AADates25-26.png" // fixed: remove "public/" from path
+        alt="Aero Advantage Dates and Info"
+        width={1000}
+        height={600}
+        className="mx-auto"
+      />
+
+      {/* Example: render items list */}
+      <ul className="mt-6">
         {items.map((item, index) => (
-          <li key={index} className="bg-lightBlue text-darkBlue rounded-full px-4 py-2 text-lg font-light">
-            {item.location}: {item.date} • {item.time}
+          <li key={index} className="py-2">
+            <strong>{item.location}</strong> — {item.date} at {item.time}
           </li>
         ))}
       </ul>
-    </div>
-  )
-}
+    </section>
+  );
+};
+
+export default LocationsAndDates;
 
