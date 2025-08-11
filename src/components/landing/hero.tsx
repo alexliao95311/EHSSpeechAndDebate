@@ -85,7 +85,7 @@ export default function Hero({
               asChild
               className="cursor-pointer bg-darkGreen p-4 text-sm sm:p-6 sm:text-lg md:text-xl text-white transition-all duration-200 hover:scale-105 hover:bg-darkGreen/90 hover:underline"
             >
-              <Link href={link}>{cta}</Link>
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc0BSPLWtcR7uQfMw_CBOzYLrgh2ARmIxQZDx7BuMkzrl3GUA/viewform">{cta}</Link>
             </Button>
           </div>
         </div>
