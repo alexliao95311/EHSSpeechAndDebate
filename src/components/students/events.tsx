@@ -55,7 +55,7 @@ export default function Events({upcomingEvents}: {upcomingEvents: DataStructure[
                       href={event.details.moreInfoLink}
                       className="text-blue-500 hover:underline"
                     >
-                      Link for more information
+                      Click here for more information
                     </Link>
                     <p className="text-sm text-gray-500">
                       {event.details.additionalInfo}
