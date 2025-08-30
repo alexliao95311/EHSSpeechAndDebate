@@ -39,7 +39,7 @@ export default function TournamentsPage({
             <p className="font-medium text-red-700">Important Notice</p>
           </div>
           <p className="mt-2 text-red-600">
-            Early Dismissal will count as a unexcused abscene but it wil not go on your record or qualify towards punishments like the No-Go list.
+            Early dismissals for tournament sign-ups will be marked unexcused but won’t be held against you.
           </p>
         </div>
       </section>
