@@ -36,7 +36,7 @@ export function renderEditField(
         <Button
           onClick={() => {
             // 1. Deep clone by serializing + deserializing
-            const newItem = JSON.parse(JSON.stringify(value[0]));
+            const newItem = JSON.parse(JSON.stringify(value[0])) as unknown;
 
             // 2. Recursively clear out string fields
             function clearStrings(obj: any) {
@@ -50,11 +50,17 @@ export function renderEditField(
             }
 
             clearStrings(newItem);
-            
+
             handleEdit(path, [...value, newItem]);
           }}
           variant="outline"
           className="w-full"
+          disabled={value.length === 0}
+          title={
+            value.length === 0
+              ? "Can't add an item: this list is empty, so there's no existing item shape to copy. Seed one item via Firestore first."
+              : undefined
+          }
         >
           <Plus className="mr-2 h-4 w-4" /> Add New Item
         </Button>
