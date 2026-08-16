@@ -25,6 +25,11 @@ next-env.d.ts
 .DS_Store
 *.pem
 
+# firebase / gcp credentials
+*serviceAccount*.json
+*firebase-adminsdk*.json
+google-credentials.json
+
 # debug
 npm-debug.log*
 yarn-debug.log*

@@ -2,16 +2,17 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
+import { env } from '~/env';
 
 // Your Firebase config object from Firebase console
 const firebaseConfig = {
-  apiKey: "AIzaSyDla9e3tLkauAEnnAhS69GxHkdMJRXDVeU",
-  authDomain: "ehsdebatewebsite.firebaseapp.com",
-  projectId: "ehsdebatewebsite",
-  storageBucket: "ehsdebatewebsite.firebasestorage.app",
-  messagingSenderId: "195763757352",
-  appId: "1:195763757352:web:1958ecd1838390887b301d",
-  measurementId: "G-J8DJRJLNT2"
+  apiKey: env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 
