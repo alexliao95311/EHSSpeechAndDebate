@@ -80,10 +80,10 @@ export default function AEROPage({ adminContent, adminError }: PageProps) {
             {locationAndDatesSection.title}
           </h2>
           <Image
-    src="/landing/25-26AADatesFINAL.png"
+    src="/landing/AADates26-27final.png"
     alt="Aero Advantage Dates"
-    width={800}
-    height={500}
+    width={706}
+    height={816}
     className="mx-auto rounded-lg"
           />
 
