@@ -53,7 +53,7 @@ export default function AEROPage({ adminContent, adminError }: PageProps) {
                 <span className="font-bold text-darkGreen">{opener.priceText}</span>
               </p>
               <div className="flex justify-center md:block">
-                <Link href={content.components.joinLink} className="mx-auto md:mx-0">
+                <Link href="https://forms.gle/mSj45t9hbqGpzouh8" className="mx-auto md:mx-0">
                   <Button className="rounded-full bg-darkGreen px-8 py-6 text-lg text-white hover:bg-darkGreen/90">
                     {opener.cta}
                   </Button>
